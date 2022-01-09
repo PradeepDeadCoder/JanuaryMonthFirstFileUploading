@@ -51,6 +51,6 @@ public class GreensCart {
 	}
 	@AfterClass
 	public static void afterClass() {
-		//driver.quit();
+		driver.get("");
 	}
 }
