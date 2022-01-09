@@ -24,7 +24,7 @@ public class GreensCart {
 		driver = new ChromeDriver();
 		driver.get("http://greenscart.in/#/login?returnUrl=%2F");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.close();
+		
 	}
 	
 	@Before
@@ -51,6 +51,6 @@ public class GreensCart {
 	}
 	@AfterClass
 	public static void afterClass() {
-		//driver.quit();
+		driver.quit();
 	}
 }
